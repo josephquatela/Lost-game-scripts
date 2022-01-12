@@ -13,12 +13,6 @@ public class SpawnManager : MonoBehaviour
       InvokeRepeating("spawnMethod", 2.0f, 2.0f);  
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     private void spawnMethod() {
       if (playerControl.gameOver == false) {
         int obstacle = Random.Range(0, obstacles.Length);
